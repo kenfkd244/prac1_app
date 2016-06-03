@@ -24,6 +24,9 @@ gem 'jbuilder',     '2.2.3'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc',         '0.4.0', group: :doc
 
+gem 'haml-rails'
+gem 'erb2haml'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3',     '1.3.9'
@@ -37,7 +40,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring',      '1.1.3'
 
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 3.4'
 end
 
 group :test do
