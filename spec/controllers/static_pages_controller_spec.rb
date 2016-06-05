@@ -7,8 +7,8 @@ RSpec.describe StaticPagesController, type: :controller do
   describe "GET #home" do
   	it "renders the home template" do
   		get :home
-  		expect(response).to render_template("home")  
-  	  assert_select "title", "Home | Ruby on Rails Tutorial Sample App"
+  		expect(response).to render_template("home")
+      assert_select "title", "Ruby on Rails Tutorial Sample App"
     end
   end
 
