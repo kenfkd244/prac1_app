@@ -27,4 +27,15 @@ RSpec.describe StaticPagesController, type: :controller do
   		assert_select "title", "About | Ruby on Rails Tutorial Sample App"
   	end
   end
+
+  describe "GET #contact" do
+    it "renders the contact template" do
+      get :contact
+      expect(response).to render_template("contact")
+      assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
+    end
+  end
 end
+
+
+
